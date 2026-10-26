@@ -1,0 +1,13 @@
+/* Avenir LT Std — @font-face for the TDSA design system. Paths are relative to this file. */
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Light.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-LightOblique.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Book.woff2") format("woff2"); font-weight: 350; font-style: normal; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-BookOblique.woff2") format("woff2"); font-weight: 350; font-style: italic; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Roman.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Oblique.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-MediumOblique.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Heavy.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-HeavyOblique.woff2") format("woff2"); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-Black.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("AvenirLTStd-BlackOblique.woff2") format("woff2"); font-weight: 900; font-style: italic; font-display: swap; }

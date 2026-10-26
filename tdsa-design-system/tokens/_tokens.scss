@@ -1,0 +1,58 @@
+// Terra Drone Arabia — design tokens (SCSS). Generated from tokens.json.
+
+$tdsa-night: #0f0f56;
+$tdsa-dusk: #143893;
+$tdsa-fineday: #25a1f4;
+$tdsa-twilight: #09aeba;
+$tdsa-dawn: #094e59;
+$tdsa-daytime: #cce6ff;
+$tdsa-sunset: #dfd1d1;
+$tdsa-white: #ffffff;
+$tdsa-surface: #ffffff;
+$tdsa-surface-alt: #cce6ff;
+$tdsa-surface-warm: #dfd1d1;
+$tdsa-surface-band: #0f0f56;
+$tdsa-ink: #0f0f56;
+$tdsa-ink-brand: #143893;
+$tdsa-ink-muted: #094e59;
+$tdsa-line: #dfd1d1;
+$tdsa-action: #143893;
+$tdsa-on-action: #ffffff;
+$tdsa-link: #143893;
+$tdsa-link-hover: #25a1f4;
+$tdsa-chart-1: #25a1f4;
+$tdsa-chart-2: #143893;
+$tdsa-chart-3: #09aeba;
+$tdsa-chart-4: #094e59;
+$tdsa-chart-5: #0f0f56;
+$tdsa-chart-grid: #dfd1d1;
+$tdsa-chart-label: #0f0f56;
+
+$tdsa-dark: (
+  'surface': #0f0f56,
+  'surface-alt': #094e59,
+  'surface-warm': #094e59,
+  'surface-band': #094e59,
+  'ink': #ffffff,
+  'ink-brand': #ffffff,
+  'ink-muted': #cce6ff,
+  'line': #094e59,
+  'action': #25a1f4,
+  'on-action': #0f0f56,
+  'link': #25a1f4,
+);
+
+$tdsa-font-sans: "Avenir", "Avenir Next", "Nunito Sans", system-ui, sans-serif;
+$tdsa-space-1: 4px;
+$tdsa-space-2: 8px;
+$tdsa-space-3: 12px;
+$tdsa-space-4: 16px;
+$tdsa-space-6: 24px;
+$tdsa-space-8: 32px;
+$tdsa-space-12: 48px;
+$tdsa-space-16: 64px;
+$tdsa-space-24: 96px;
+$tdsa-radius-sm: 4px;
+$tdsa-radius-md: 8px;
+$tdsa-radius-lg: 16px;
+$tdsa-radius-pill: 999px;

@@ -1,0 +1,4 @@
+/* Terra Drone Arabia design system — one import for everything. */
+@import url("fonts/avenir.css");
+@import url("tokens/tokens.css");
+@import url("components/tdsa-components.css");

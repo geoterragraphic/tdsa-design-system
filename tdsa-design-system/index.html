@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terra Drone Arabia — design system</title>
+<link rel="icon" href="assets/logos/tdsa-icon-positive.png">
+<link rel="stylesheet" href="tdsa.css">
+<style>
+  .wrap { max-width: 1040px; margin: 0 auto; padding: var(--space-8) var(--space-6) var(--space-24); }
+  .wrap > h2 { font-size: 32px; line-height: 40px; font-weight: 800; color: var(--ink); margin: var(--space-16) 0 var(--space-6); padding-top: var(--space-6); border-top: 1px solid var(--line); }
+  .lede { color: var(--ink-muted); max-width: 680px; }
+  .coverbox { width: 960px; max-width: 100%; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-md); }
+  
+  
+  .coverbox { background:var(--surface); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .band { fill:var(--surface-band); }
+  .dusk { fill:var(--dusk); }
+  .fine { fill:var(--fineday); }
+  .teal { fill:var(--twilight); }
+  .tint { fill:var(--daytime); }
+  .dot { fill:var(--daytime); }
+  .blk { rx:var(--radius-sm); }
+  .words { position:absolute; left:var(--space-6); right:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-size:64px; line-height:.95; font-weight:900; letter-spacing:-.01em; color:var(--ink); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:14px; line-height:20px; color:var(--ink-muted); }
+
+  .sws { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-6); }
+  .sw .chip { height: 96px; border-radius: var(--radius-md); border: 1px solid var(--line); margin-bottom: var(--space-2); }
+  .sw b { display: block; } .sw code { font-size: 13px; color: var(--ink-muted); } .sw p { margin: var(--space-1) 0 0; font-size: 13px; line-height: 20px; }
+  .ty { padding: var(--space-4) 0; border-bottom: 1px solid var(--line); } .ty .meta { font-size: 12px; color: var(--ink-muted); }
+  .logos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-6); }
+  .logo { margin: 0; border-radius: var(--radius-md); border: 1px solid var(--line); padding: var(--space-8); display: flex; flex-direction: column; align-items: center; gap: var(--space-4); }
+  .logo img { max-height: 96px; max-width: 100%; } .logo.dark { background: var(--night); color: var(--daytime); }
+  .logo figcaption { font-size: 12px; }
+  .comp h3 { font-size: 18px; font-weight: 800; margin: var(--space-8) 0 var(--space-3); } .comp h3 a { font-size: 13px; font-weight: 500; color: var(--link); }
+  .frame { border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; }
+  @media (max-width: 760px) { .td-hero, .td-cards, .td-footer { grid-template-columns: 1fr; } .td-nav { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="coverbox"><div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      surface-band (night) 280x272 slab bled off the top and right · dusk 144x144 · fineday 80x64 · twilight 48x32 · daytime 32x80 tint — about 40% of 960x288
+  arrangement one tall night slab with satellites stepping up to its left, bottoms on one line space-6 above the edge, gutters space-4
+  pattern     survey dot grid, from "precise, technical": the aerial-mapping grid of a drone flight, daytime dots at a space-8 pitch over the night slab (56 dots)
+  scales      sides in space-4 multiples; gutters space-4; pitch space-8; corners radius-sm (square, technical)
+-->
+<rect class="band blk" x="208" y="-8" width="280" height="272" rx="4"/>
+<rect class="dusk blk" x="48" y="120" width="144" height="144" rx="4"/>
+<rect class="fine blk" x="112" y="40" width="80" height="64" rx="4"/>
+<rect class="teal blk" x="48" y="72" width="48" height="32" rx="4"/>
+<rect class="tint blk" x="0" y="184" width="32" height="80" rx="4"/>
+<circle class="dot" cx="240" cy="24" r="2"/>
+<circle class="dot" cx="240" cy="56" r="2"/>
+<circle class="dot" cx="240" cy="88" r="2"/>
+<circle class="dot" cx="240" cy="120" r="2"/>
+<circle class="dot" cx="240" cy="152" r="2"/>
+<circle class="dot" cx="240" cy="184" r="2"/>
+<circle class="dot" cx="240" cy="216" r="2"/>
+<circle class="dot" cx="272" cy="24" r="2"/>
+<circle class="dot" cx="272" cy="56" r="2"/>
+<circle class="dot" cx="272" cy="88" r="2"/>
+<circle class="dot" cx="272" cy="120" r="2"/>
+<circle class="dot" cx="272" cy="152" r="2"/>
+<circle class="dot" cx="272" cy="184" r="2"/>
+<circle class="dot" cx="272" cy="216" r="2"/>
+<circle class="dot" cx="304" cy="24" r="2"/>
+<circle class="dot" cx="304" cy="56" r="2"/>
+<circle class="dot" cx="304" cy="88" r="2"/>
+<circle class="dot" cx="304" cy="120" r="2"/>
+<circle class="dot" cx="304" cy="152" r="2"/>
+<circle class="dot" cx="304" cy="184" r="2"/>
+<circle class="dot" cx="304" cy="216" r="2"/>
+<circle class="dot" cx="336" cy="24" r="2"/>
+<circle class="dot" cx="336" cy="56" r="2"/>
+<circle class="dot" cx="336" cy="88" r="2"/>
+<circle class="dot" cx="336" cy="120" r="2"/>
+<circle class="dot" cx="336" cy="152" r="2"/>
+<circle class="dot" cx="336" cy="184" r="2"/>
+<circle class="dot" cx="336" cy="216" r="2"/>
+<circle class="dot" cx="368" cy="24" r="2"/>
+<circle class="dot" cx="368" cy="56" r="2"/>
+<circle class="dot" cx="368" cy="88" r="2"/>
+<circle class="dot" cx="368" cy="120" r="2"/>
+<circle class="dot" cx="368" cy="152" r="2"/>
+<circle class="dot" cx="368" cy="184" r="2"/>
+<circle class="dot" cx="368" cy="216" r="2"/>
+<circle class="dot" cx="400" cy="24" r="2"/>
+<circle class="dot" cx="400" cy="56" r="2"/>
+<circle class="dot" cx="400" cy="88" r="2"/>
+<circle class="dot" cx="400" cy="120" r="2"/>
+<circle class="dot" cx="400" cy="152" r="2"/>
+<circle class="dot" cx="400" cy="184" r="2"/>
+<circle class="dot" cx="400" cy="216" r="2"/>
+<circle class="dot" cx="432" cy="24" r="2"/>
+<circle class="dot" cx="432" cy="56" r="2"/>
+<circle class="dot" cx="432" cy="88" r="2"/>
+<circle class="dot" cx="432" cy="120" r="2"/>
+<circle class="dot" cx="432" cy="152" r="2"/>
+<circle class="dot" cx="432" cy="184" r="2"/>
+<circle class="dot" cx="432" cy="216" r="2"/>
+<circle class="dot" cx="464" cy="24" r="2"/>
+<circle class="dot" cx="464" cy="56" r="2"/>
+<circle class="dot" cx="464" cy="88" r="2"/>
+<circle class="dot" cx="464" cy="120" r="2"/>
+<circle class="dot" cx="464" cy="152" r="2"/>
+<circle class="dot" cx="464" cy="184" r="2"/>
+<circle class="dot" cx="464" cy="216" r="2"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Terra Drone<br>Arabia</h1>
+<p class="tag">Every Terrain. Every Angle. One Partner.</p>
+</div>
+</div>
+</div>
+  <p class="lede">The brand system for Terra Drone Arabia: colour tokens, Avenir type, logos, photography and the page components of terra-drone.com.sa. Read the <a class="td-link" href="README.md">README</a> or see the <a class="td-link" href="examples/landing-page.html">example landing page</a>.</p>
+  <h2>Colour</h2>
+  <div class="sws"><div class="sw"><div class="chip" style="background:#0f0f56"></div><b>night</b><code>#0F0F56</code><p>Primary dark.</p></div>
+<div class="sw"><div class="chip" style="background:#143893"></div><b>dusk</b><code>#143893</code><p>Primary brand blue.</p></div>
+<div class="sw"><div class="chip" style="background:#25a1f4"></div><b>fineday</b><code>#25A1F4</code><p>Accent.</p></div>
+<div class="sw"><div class="chip" style="background:#09aeba"></div><b>twilight</b><code>#09AEBA</code><p>Secondary accent (teal).</p></div>
+<div class="sw"><div class="chip" style="background:#094e59"></div><b>dawn</b><code>#094E59</code><p>Deep teal.</p></div>
+<div class="sw"><div class="chip" style="background:#cce6ff"></div><b>daytime</b><code>#CCE6FF</code><p>Light blue tint.</p></div>
+<div class="sw"><div class="chip" style="background:#dfd1d1"></div><b>sunset</b><code>#DFD1D1</code><p>Warm neutral.</p></div>
+<div class="sw"><div class="chip" style="background:#ffffff"></div><b>white</b><code>#FFFFFF</code><p>Default page ground; text on night, dusk and dawn.</p></div></div>
+  <h2>Typography</h2>
+  <div class="ty"><span class="meta">display · 56px/60px · 900</span><div class="display">Every Terrain. Every Angle. One Partner.</div></div><div class="ty"><span class="meta">h1 · 40px/48px · 800</span><div class="h1">Why Industry Leaders Choose Us</div></div><div class="ty"><span class="meta">h2 · 32px/40px · 800</span><div class="h2">Drone Services</div></div><div class="ty"><span class="meta">h3 · 24px/32px · 800</span><div class="h3">Geospatial Services</div></div><div class="ty"><span class="meta">lead · 20px/30px · 400</span><div class="lead">Every terrain, every angle.</div></div><div class="ty"><span class="meta">body · 16px/26px · 400</span><div class="body">Every terrain, every angle.</div></div><div class="ty"><span class="meta">label · 14px/20px · 500</span><div class="label">Contact Us</div></div><div class="ty"><span class="meta">caption · 12px/16px · 300</span><div class="caption">Every terrain, every angle.</div></div>
+  <h2>Logos</h2>
+  <div class="logos"><figure class="logo light"><img src="assets/logos/tdsa-logo-long-positive.png" alt="tdsa-logo-long-positive.png"><figcaption>tdsa-logo-long-positive.png</figcaption></figure>
+<figure class="logo dark"><img src="assets/logos/tdsa-logo-long-white.png" alt="tdsa-logo-long-white.png"><figcaption>tdsa-logo-long-white.png</figcaption></figure>
+<figure class="logo light"><img src="assets/logos/tdsa-logo-square-positive.png" alt="tdsa-logo-square-positive.png"><figcaption>tdsa-logo-square-positive.png</figcaption></figure>
+<figure class="logo dark"><img src="assets/logos/tdsa-logo-square-white.png" alt="tdsa-logo-square-white.png"><figcaption>tdsa-logo-square-white.png</figcaption></figure>
+<figure class="logo light"><img src="assets/logos/tdsa-icon-positive.png" alt="tdsa-icon-positive.png"><figcaption>tdsa-icon-positive.png</figcaption></figure></div>
+  <h2>Components</h2>
+  <section class="comp"><h3>Button <a href="components/Button/example.html">example</a> · <a href="components/Button/README.md">guidelines</a></h3><div class="frame"><div class="td-pad td-row">
+  <a class="td-btn td-btn-primary" href="#">Contact Us</a>
+  <a class="td-btn td-btn-secondary" href="#">Schedule Meeting</a>
+</div></div></section>
+<section class="comp"><h3>TextLink <a href="components/TextLink/example.html">example</a> · <a href="components/TextLink/README.md">guidelines</a></h3><div class="frame"><div class="td-pad td-row" style="gap:var(--space-8)">
+  <a class="td-link" href="#">View All Drone Services</a>
+  <a class="td-link" href="#">Full Case Study</a>
+  <a class="td-link" href="#">Read More</a>
+</div></div></section>
+<section class="comp"><h3>Header <a href="components/Header/example.html">example</a> · <a href="components/Header/README.md">guidelines</a></h3><div class="frame"><header class="td-header">
+  <img class="td-logo" src="assets/logos/tdsa-logo-long-positive.png" alt="Terra Drone Arabia">
+  <nav class="td-nav"><a href="#">Home</a><a href="#">About</a><a href="#">Services</a><a href="#">Resources</a><a href="#">Contact</a></nav>
+  <span class="td-lang" lang="ar">العربية</span>
+</header></div></section>
+<section class="comp"><h3>Hero <a href="components/Hero/example.html">example</a> · <a href="components/Hero/README.md">guidelines</a></h3><div class="frame"><section class="td-hero">
+  <div>
+    <h1 class="td-display"><span>Every Terrain.</span><span>Every Angle.</span><span>One Partner.</span></h1>
+    <p class="td-lead">Drone and geospatial services for Saudi industry, from inspection to mapping.</p>
+    <div class="td-row"><a class="td-btn td-btn-primary" href="#">Contact Us</a><a class="td-btn td-btn-secondary" href="#">Schedule Meeting</a></div>
+  </div>
+  <div style="height:280px"><img class="td-img" src="assets/photography/delivery-drone-flycart30-port.webp" alt="Heavy-lift delivery drone carrying a cargo box over a port"></div>
+</section></div></section>
+<section class="comp"><h3>ProofStrip <a href="components/ProofStrip/example.html">example</a> · <a href="components/ProofStrip/README.md">guidelines</a></h3><div class="frame"><section class="td-proof">
+  <p class="td-eyebrow">Certifications</p>
+  <div class="td-proof-row">
+    <span class="td-proof-item">GACA</span><span class="td-proof-item">GEOSA</span><span class="td-proof-item">ISO 9001</span><span class="td-proof-item">ISO 22301</span><span class="td-proof-item">ISO 45001</span><span class="td-proof-item">Vision 2030</span>
+  </div>
+</section></div></section>
+<section class="comp"><h3>ServiceCard <a href="components/ServiceCard/example.html">example</a> · <a href="components/ServiceCard/README.md">guidelines</a></h3><div class="frame"><div class="td-cards">
+  <article class="td-card"><img class="td-img" src="assets/concept/ai-drone-over-3d-terrain-model.jpg" alt="Survey drone above a 3D terrain model">
+    <div class="td-card-body"><h3>Drone Services</h3><p>Inspection, monitoring and surveying for oil &amp; gas, utilities and construction.</p><a class="td-link" href="#">View All Drone Services</a></div></article>
+  <article class="td-card"><img class="td-img" src="assets/concept/ai-elevation-heatmap-overlay.jpg" alt="Elevation heatmap over aerial imagery">
+    <div class="td-card-body"><h3>Geospatial Services</h3><p>Mapping, digital twins and GIS analytics you can trust.</p><a class="td-link" href="#">View All Geospatial Services</a></div></article>
+</div></div></section>
+<section class="comp"><h3>CTABand <a href="components/CTABand/example.html">example</a> · <a href="components/CTABand/README.md">guidelines</a></h3><div class="frame"><section class="td-band">
+  <h2>Data you can trust, <span>Operations you can scale</span></h2>
+  <a class="td-btn td-btn-primary" href="#">Contact Us</a>
+</section></div></section>
+<section class="comp"><h3>Footer <a href="components/Footer/example.html">example</a> · <a href="components/Footer/README.md">guidelines</a></h3><div class="frame"><section class="td-scrim td-news">
+  <img src="assets/photography/riyadh-skyline-kingdom-centre-dusk.jpg" alt="">
+  <div><h3>Insights from the field</h3><p>Drone and geospatial news, once a month.</p></div>
+  <div class="td-input"><input placeholder="Email address" aria-label="Email address"><button class="td-btn td-btn-primary">Subscribe</button></div>
+</section>
+<footer class="td-footer">
+  <div><img class="td-logo" src="assets/logos/tdsa-logo-long-white.png" alt="Terra Drone Arabia"></div>
+  <div><h4>Riyadh</h4><p>Head office</p></div>
+  <div><h4>Dhahran</h4><p>Eastern Province office</p></div>
+  <div><h4>Company</h4><p>About · Services · Contact</p></div>
+</footer></div></section>
+<section class="comp"><h3>Chart <a href="components/Chart/example.html">example</a> · <a href="components/Chart/README.md">guidelines</a></h3><div class="frame"><div class="td-chart">
+<svg viewBox="0 0 520 200" role="img" aria-label="Example bar chart in the five series colours">
+  <line class="grid" x1="40" y1="20" x2="510" y2="20"/><line class="grid" x1="40" y1="70" x2="510" y2="70"/><line class="grid" x1="40" y1="120" x2="510" y2="120"/><line class="grid" x1="40" y1="170" x2="510" y2="170"/>
+  <text class="lbl" x="32" y="174" text-anchor="end">0</text><text class="lbl" x="32" y="124" text-anchor="end">50</text><text class="lbl" x="32" y="74" text-anchor="end">100</text><text class="lbl" x="32" y="24" text-anchor="end">150</text>
+  <rect class="s1" x="60" y="40" width="56" height="130"/><rect class="s2" x="156" y="70" width="56" height="100"/><rect class="s3" x="252" y="95" width="56" height="75"/><rect class="s4" x="348" y="115" width="56" height="55"/><rect class="s5" x="444" y="135" width="56" height="35"/>
+  <text class="lbl" x="88" y="190" text-anchor="middle">FineDay</text><text class="lbl" x="184" y="190" text-anchor="middle">Dusk</text><text class="lbl" x="280" y="190" text-anchor="middle">Twilight</text><text class="lbl" x="376" y="190" text-anchor="middle">Dawn</text><text class="lbl" x="472" y="190" text-anchor="middle">Night</text>
+</svg>
+</div></div></section>
+</div>
+</body>
+</html>

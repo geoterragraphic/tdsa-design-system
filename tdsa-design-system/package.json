@@ -1,0 +1,10 @@
+{
+  "name": "@terra-drone-arabia/design-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Terra Drone Arabia brand tokens, Avenir type, logos and page components.",
+  "style": "tdsa.css",
+  "main": "tokens/tailwind.preset.js",
+  "files": ["tdsa.css", "tokens", "fonts", "components", "assets", "docs"],
+  "license": "UNLICENSED"
+}
